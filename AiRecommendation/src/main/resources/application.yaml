@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: AiRecommendation
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/airecommendation
+      database : airecommendation
+
+server:
+  port: 8083
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone : http://localhost:8761/eureka
+
