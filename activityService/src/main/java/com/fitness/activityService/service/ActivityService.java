@@ -27,7 +27,7 @@ public class ActivityService {
         Boolean result = userValidateService.validateUser(activityRequest.getId());
 
         if(!result){
-            throw  new RuntimeException("Invalid USer "+activityRequest.getUserId());
+            throw  new RuntimeException("Invalid USer ID "+activityRequest.getUserId());
         }
 
         Activity activity = convertActivityRequestToEntity(activityRequest);
