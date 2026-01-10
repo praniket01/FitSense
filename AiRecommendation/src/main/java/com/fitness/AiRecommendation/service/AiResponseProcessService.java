@@ -42,8 +42,6 @@ public class AiResponseProcessService {
                     .replaceAll("```json\\n","")
                     .replaceAll("\\n","")
                     .trim();
-//                log.info("text: {}", text);
-
             //Convert jsonContent in readable format
             JsonNode analysisJson =  objectMapper.readTree(jsonContent);
             JsonNode analysisNode = analysisJson.path("analysis");
