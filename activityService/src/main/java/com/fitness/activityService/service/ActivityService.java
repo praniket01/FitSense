@@ -7,6 +7,7 @@ import com.fitness.activityService.Repository.ActivityRepository;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class ActivityService {
     private final ActivityRepository activityRepository;
     private final UserValidateService userValidateService;

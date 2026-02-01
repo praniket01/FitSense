@@ -4,6 +4,8 @@ import com.fitness.activityService.DTO.ActivityRequest;
 import com.fitness.activityService.DTO.ActivityResponse;
 import com.fitness.activityService.service.ActivityService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

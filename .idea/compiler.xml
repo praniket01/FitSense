@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaServer" />
         <module name="configServer" />
+        <module name="gateway" />
       </profile>
       <profile name="Annotation profile for usermicroservice" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -29,6 +30,7 @@
       <module name="activityService" options="-parameters" />
       <module name="configServer" options="-parameters" />
       <module name="eurekaServer" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="usermicroservice" options="-parameters" />
     </option>
   </component>

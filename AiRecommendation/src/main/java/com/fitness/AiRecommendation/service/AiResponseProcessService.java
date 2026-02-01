@@ -1,8 +1,5 @@
 package com.fitness.AiRecommendation.service;
 
-import com.fasterxml.jackson.annotation.JsonRootName;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.core.util.RecyclerPool;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fitness.AiRecommendation.model.Activity;
@@ -10,6 +7,7 @@ import com.fitness.AiRecommendation.model.Recommendation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.time.LocalDateTime;
 import java.util.*;
@@ -25,7 +23,6 @@ public class AiResponseProcessService {
         String aiResponse = geminiService.generateRecommendation(prompt);
         log.info("AiResponse: {}", aiResponse);
         return processAiResponse(activity,aiResponse);
-
     }
 
     private Recommendation processAiResponse(Activity activity, String aiResponse) {

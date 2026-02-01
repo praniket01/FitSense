@@ -14,6 +14,7 @@ import java.util.Map;
 @Slf4j
 @Service
 public class GeminiService {
+
     private final WebClient webClient;
 
     @Value("${geminiCredentials.geminiUrl}")

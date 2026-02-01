@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/AiRecommendation/pom.xml" />
         <option value="$PROJECT_DIR$/activityService/pom.xml" />
         <option value="$PROJECT_DIR$/configServer/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
       </list>
     </option>
   </component>
